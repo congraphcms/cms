@@ -14,10 +14,8 @@ class DatabaseSeeder extends Seeder
     {
         Model::unguard();
 
-        $this->call([
-            DefaultWorkflowSeeder::class,
-            OAuthSeeder::class
-        ]);
+        $this->call(DefaultWorkflowSeeder::class);
+        $this->call(OAuthSeeder::class);
 
         Model::reguard();
     }

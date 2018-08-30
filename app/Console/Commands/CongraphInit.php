@@ -5,9 +5,11 @@ namespace App\Console\Commands;
 use Illuminate\Console\Command;
 use Firebase\JWT\JWT;
 use Illuminate\Support\Facades\Config;
+use Illuminate\Support\Facades\Artisan;
+
 use Congraph\Contracts\OAuth2\ClientRepositoryContract;
 
-class IndexEntities extends Command
+class CongraphInit extends Command
 {
     /**
      * The name and signature of the console command.

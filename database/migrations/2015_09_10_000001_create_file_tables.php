@@ -1,6 +1,6 @@
 <?php
 /*
- * This file is part of the cookbook/filesystem package.
+ * This file is part of the congraph/filesystem package.
  *
  * (c) Nikola Plavšić <nikolaplavsic@gmail.com>
  *
@@ -21,7 +21,7 @@ use Illuminate\Database\Migrations\Migration;
  * 
  * @author  	Nikola Plavšić <nikolaplavsic@gmail.com>
  * @copyright  	Nikola Plavšić <nikolaplavsic@gmail.com>
- * @package 	cookbook/filesystem
+ * @package 	congraph/filesystem
  * @since 		0.1.0-alpha
  * @version  	0.1.0-alpha
  */

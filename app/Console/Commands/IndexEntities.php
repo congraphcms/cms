@@ -5,8 +5,8 @@ namespace App\Console\Commands;
 use Illuminate\Console\Command;
 use Firebase\JWT\JWT;
 use Illuminate\Support\Facades\Config;
-use Cookbook\EntityElastic\Repositories\EntityRepositoryContract as EntityElasticRepositoryContract;
-use Cookbook\Contracts\Eav\EntityRepositoryContract;
+use Congraph\EntityElastic\Repositories\EntityRepositoryContract as EntityElasticRepositoryContract;
+use Congraph\Contracts\Eav\EntityRepositoryContract;
 
 class IndexEntities extends Command
 {
@@ -27,14 +27,14 @@ class IndexEntities extends Command
     /**
      * Entity Elastic Repository
      *
-     * @var Cookbook\EntityElastic\Repositories\EntityRepositoryContract
+     * @var Congraph\EntityElastic\Repositories\EntityRepositoryContract
      */
     protected $elasticRepository;
 
     /**
      * Entity Repository
      *
-     * @var Cookbook\EntityElastic\Repositories\EntityRepositoryContract
+     * @var Congraph\EntityElastic\Repositories\EntityRepositoryContract
      */
     protected $repository;
 

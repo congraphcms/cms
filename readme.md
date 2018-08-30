@@ -1,27 +1,54 @@
-## Laravel PHP Framework
+# Congraph CMS Project
 
-[![Build Status](https://travis-ci.org/laravel/framework.svg)](https://travis-ci.org/laravel/framework)
-[![Total Downloads](https://poser.pugx.org/laravel/framework/d/total.svg)](https://packagist.org/packages/laravel/framework)
-[![Latest Stable Version](https://poser.pugx.org/laravel/framework/v/stable.svg)](https://packagist.org/packages/laravel/framework)
-[![Latest Unstable Version](https://poser.pugx.org/laravel/framework/v/unstable.svg)](https://packagist.org/packages/laravel/framework)
-[![License](https://poser.pugx.org/laravel/framework/license.svg)](https://packagist.org/packages/laravel/framework)
+## Deployment
+### Info
+3 Apps need deployment
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable, creative experience to be truly fulfilling. Laravel attempts to take the pain out of development by easing common tasks used in the majority of web projects, such as authentication, routing, sessions, queueing, and caching.
+ - API app (api)
+ - Admin app (admin|cms)
+ - Frontend app
 
-Laravel is accessible, yet powerful, providing powerful tools needed for large, robust applications. A superb inversion of control container, expressive migration system, and tightly integrated unit testing support give you the tools you need to build any application with which you are tasked.
+## API Deployment
+Requirements:
+ - MySQL | MariaDB installed
+ - Elasticsearch installed
+ - PHP ^7.0 installed
 
-## Official Documentation
+Steps:
+ - Copy files
+ - Configuration
+ - DB Seed
 
-Documentation for the framework can be found on the [Laravel website](http://laravel.com/docs).
+### Copy files
+1. Copy all files compressed in a .zip file including "vendor" folder if composer is not available on the server.
+2. Unzip files on the server over ssh.
+3. Set permissions for files.
+Hokosoft servers:
+```
+chown -R {$domain}:www /usr/local/www/data/{$domain}
+chmod -R 750 /usr/local/www/data/{$domain}
+```
 
-## Contributing
+### Configuration
+1. Change .env file (mysql settings, es settings, index name, app key etc.)
+2. If using apache server add this to .htaccess file in /public folder
+```
+    RewriteCond %{HTTP:Authorization} ^(.*)
+    RewriteRule .* - [e=HTTP_AUTHORIZATION:%1]
+```
+3. Change domain in app.php file in /config folder
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](http://laravel.com/docs/contributions).
+### DB Seed
+1. Upload empty Congraph db to server and import it
+2. Check DefaultWorkflowSeeder.php and OAuthSeeder.php in /database/seeds folder, if data is ok for this setup run the seeders
+3. Run the seeders with
+```
+php artisan db:seed --class=DefaultWorkflowSeeder
+php artisan db:seed --class=OAuthSeeder
+```
 
-## Security Vulnerabilities
+## Admin App Depoloyment
+Requirements:
+ - node and npm installed on server
+ - preferably pm2 install on server
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell at taylor@laravel.com. All security vulnerabilities will be promptly addressed.
-
-### License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT)

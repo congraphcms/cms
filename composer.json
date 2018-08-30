@@ -1,12 +1,22 @@
 {
-    "name": "laravel/laravel",
-    "description": "The Laravel Framework.",
-    "keywords": ["framework", "laravel"],
+    "name": "congraph/cms",
+    "description": "Congraph CMS Project.",
+    "keywords": ["Congraph", "CMS", "API", "API-first", "framework", "laravel"],
     "license": "MIT",
     "type": "project",
     "require": {
         "php": ">=5.5.9",
-        "laravel/framework": "5.1.*"
+        "laravel/framework": "5.1.*", 
+        "congraph/contracts": "dev-master",
+        "congraph/core": "dev-master",
+        "congraph/locales": "dev-master",
+        "congraph/workflows": "dev-master",
+        "congraph/filesystem": "dev-master",
+        "congraph/eav": "dev-master",
+        "congraph/api": "dev-master",
+        "congraph/oauth2": "dev-master",
+        "congraph/entity-elastic": "dev-master",
+        "dingo/api": "1.0.*@dev"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",

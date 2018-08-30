@@ -145,6 +145,23 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
 
+        /*
+         * Congraph Service Providers...
+         */
+        Intervention\Image\ImageServiceProvider::class,
+        Dingo\Api\Provider\LaravelServiceProvider::class,
+        LucaDegasperi\OAuth2Server\Storage\FluentStorageServiceProvider::class,
+        LucaDegasperi\OAuth2Server\OAuth2ServerServiceProvider::class,
+        Congraph\Core\CoreServiceProvider::class,
+        Congraph\Locales\LocalesServiceProvider::class,
+        Congraph\OAuth2\OAuth2ServiceProvider::class,
+        Congraph\Workflows\WorkflowsServiceProvider::class,
+        Congraph\Filesystem\FilesystemServiceProvider::class,
+        Congraph\Eav\EavServiceProvider::class,
+        Congraph\Api\ApiServiceProvider::class,
+        Congraph\EntityElastic\EntityElasticServiceProvider::class,
+
+
     ],
 
     /*

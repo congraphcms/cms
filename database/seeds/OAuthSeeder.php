@@ -176,7 +176,7 @@ class OAuthSeeder extends Seeder
                 $dumper->dump($e->getErrors());
                 return;
             }
-            
+
             $roleResults[] = $result;
         }
 
@@ -185,7 +185,7 @@ class OAuthSeeder extends Seeder
             [
                 'name' => 'Nikola Plavsic',
                 'email' => 'nikolaplavsic@gmail.com',
-                'password' => 'secret123',
+                'password' => 'strongPassword!',
                 'roles' => [
                     [
                         'id' => $roleResults[0]->id,
@@ -196,18 +196,7 @@ class OAuthSeeder extends Seeder
             [
                 'name' => 'Velja Matic',
                 'email' => 'veljamatic@gmail.com',
-                'password' => 'examplePass',
-                'roles' => [
-                    [
-                        'id' => $roleResults[0]->id,
-                        'type' => 'role'
-                    ]
-                ]
-            ],
-            [
-                'name' => 'Filip Arneric',
-                'email' => 'filip@rebellion7.com',
-                'password' => 'examplePass',
+                'password' => 'strongPassword!',
                 'roles' => [
                     [
                         'id' => $roleResults[0]->id,

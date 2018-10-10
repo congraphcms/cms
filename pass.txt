@@ -1,2 +1,0 @@
-vekson123==>examplePass
-selasije==>examplePass

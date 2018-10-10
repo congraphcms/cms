@@ -185,7 +185,7 @@ class OAuthSeeder extends Seeder
             [
                 'name' => 'Nikola Plavsic',
                 'email' => 'nikolaplavsic@gmail.com',
-                'password' => 'strongPassword!',
+                'password' => 'examplePass',
                 'roles' => [
                     [
                         'id' => $roleResults[0]->id,
@@ -196,7 +196,7 @@ class OAuthSeeder extends Seeder
             [
                 'name' => 'Velja Matic',
                 'email' => 'veljamatic@gmail.com',
-                'password' => 'strongPassword!',
+                'password' => 'examplePass',
                 'roles' => [
                     [
                         'id' => $roleResults[0]->id,

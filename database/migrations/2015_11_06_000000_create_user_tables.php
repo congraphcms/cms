@@ -1,6 +1,6 @@
 <?php
 /*
- * This file is part of the cookbook/oauth package.
+ * This file is part of the congraph/oauth package.
  *
  * (c) Nikola Plavšić <nikolaplavsic@gmail.com>
  *
@@ -21,7 +21,7 @@ use Illuminate\Database\Migrations\Migration;
  * 
  * @author  	Nikola Plavšić <nikolaplavsic@gmail.com>
  * @copyright  	Nikola Plavšić <nikolaplavsic@gmail.com>
- * @package 	cookbook/oauth
+ * @package 	congraph/oauth
  * @since 		0.1.0-alpha
  * @version  	0.1.0-alpha
  */

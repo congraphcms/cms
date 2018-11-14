@@ -1,6 +1,6 @@
 <?php
 /*
- * This file is part of the cookbook/cms package.
+ * This file is part of the congraph/cms package.
  *
  * (c) Nikola Plavšić <nikolaplavsic@gmail.com>
  *
@@ -25,7 +25,7 @@ use Carbon\Carbon;
  *
  * @author      Nikola Plavšić <nikolaplavsic@gmail.com>
  * @copyright   Nikola Plavšić <nikolaplavsic@gmail.com>
- * @package     cookbook/cms
+ * @package     congraph/cms
  * @since       0.1.0-alpha
  * @version     0.1.0-alpha
  */
@@ -34,7 +34,7 @@ class OAuthSeeder extends Seeder
     public function run()
     {
         $dumper = new Dumper();
-        $bus = App::make('Cookbook\Core\Bus\CommandDispatcher');
+        $bus = App::make('Congraph\Core\Bus\CommandDispatcher');
 
         // SCOPES
         DB::table('oauth_scopes')->delete();
@@ -171,8 +171,8 @@ class OAuthSeeder extends Seeder
         $roleResults = [];
         foreach ($roles as $role) {
             try {
-                $result = $bus->dispatch(new Cookbook\OAuth2\Commands\Roles\RoleCreateCommand($role));
-            } catch (\Cookbook\Core\Exceptions\ValidationException $e) {
+                $result = $bus->dispatch(new Congraph\OAuth2\Commands\Roles\RoleCreateCommand($role));
+            } catch (\Congraph\Core\Exceptions\ValidationException $e) {
                 $dumper->dump($e->getErrors());
                 return;
             }
@@ -220,8 +220,8 @@ class OAuthSeeder extends Seeder
         $userResults = [];
         foreach ($users as $user) {
             try {
-                $result = $bus->dispatch(new Cookbook\OAuth2\Commands\Users\UserCreateCommand($user));
-            } catch (\Cookbook\Core\Exceptions\ValidationException $e) {
+                $result = $bus->dispatch(new Congraph\OAuth2\Commands\Users\UserCreateCommand($user));
+            } catch (\Congraph\Core\Exceptions\ValidationException $e) {
                 $dumper->dump($e->getErrors());
                 return;
             }
@@ -261,8 +261,8 @@ class OAuthSeeder extends Seeder
         $clientResults = [];
         foreach ($clients as $client) {
             try {
-                $result = $bus->dispatch(new Cookbook\OAuth2\Commands\Clients\ClientCreateCommand($client));
-            } catch (\Cookbook\Core\Exceptions\ValidationException $e) {
+                $result = $bus->dispatch(new Congraph\OAuth2\Commands\Clients\ClientCreateCommand($client));
+            } catch (\Congraph\Core\Exceptions\ValidationException $e) {
                 $dumper->dump($e->getErrors());
                 return;
             }

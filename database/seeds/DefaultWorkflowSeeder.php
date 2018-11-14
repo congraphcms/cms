@@ -1,6 +1,6 @@
 <?php
 /*
- * This file is part of the cookbook/workflows package.
+ * This file is part of the congraph/workflows package.
  *
  * (c) Nikola Plavšić <nikolaplavsic@gmail.com>
  *
@@ -21,7 +21,7 @@ use Illuminate\Support\Facades\DB;
  * 
  * @author  	Nikola Plavšić <nikolaplavsic@gmail.com>
  * @copyright  	Nikola Plavšić <nikolaplavsic@gmail.com>
- * @package 	cookbook/workflows
+ * @package 	congraph/workflows
  * @since 		0.1.0-alpha
  * @version  	0.1.0-alpha
  */

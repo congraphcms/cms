@@ -11,6 +11,7 @@
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
+
 /**
  * WorkflowTestDbSeeder
  * 

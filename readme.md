@@ -71,8 +71,8 @@ This command should print out settings for 2 apps (Administration App, Frontend 
 ### NodeJS Administration App
 We will install the admin app by cloning the repository from github
 ```
-git clone git@github.com:congraphcs/admin.get [directory]
-git clone git@github.com:congraphcs/admin.get new-project-admin
+git clone git@github.com:congraphcms/admin.get [directory]
+git clone git@github.com:congraphcms/admin.get new-project-admin
 ```
 after cloning the repo we want to move to the admin project folder and run npm installer
 ```

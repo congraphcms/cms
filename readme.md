@@ -1,6 +1,6 @@
 # Congraph CMS Project
 ## Installation
-Congraph CMS Installation has 2 parts: Laravel API installation and NodeJS Admin installation
+Congraph CMS Installation has 3 parts: Laravel API installation, NodeJS Admin installation and Nuxt Frontend App
 Your folder structure should be:
 ```
 /projects-folder
@@ -108,6 +108,31 @@ password: secret
 Go to your Laravel API project folder and then go to `/vendor/congraph/api/Http/routes.php` file
 Uncomment the 5. line `header('Access-Control-Allow-Origin: *');`
 Try to log in again.
+
+### Nuxt Frontend App
+We will install the frontend app by cloning the repository from github
+```
+git clone git@github.com:congraphcms/nuxt-starter.git [directory]
+git clone git@github.com:congraphcms/nuxt-starter.git new-project-app
+```
+after cloning the repo we want to move to the frontend project folder and run npm installer
+```
+npm install
+```
+This should install all dependencies to our local environment
+
+We need to setup our environment like with laravel project. First we need to duplicate the `.env.example` file and name it `.env`.
+```
+cp .env.example .env
+```
+And now we can change the `.env` file. Settings we need to set:
+1. `CG_URL` URL where we can find Congraph API (include the `/` at the end of URL)
+2. `DEFAULT_LOCALE` the code for default locale used by App example: `en_US`
+
+With these parameters set, we can run the Frontend App
+```
+npm run dev
+```
 
 
 ## Deployment

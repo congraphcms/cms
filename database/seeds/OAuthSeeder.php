@@ -182,20 +182,9 @@ class OAuthSeeder extends Seeder
         // USERS
         $users = [
             [
-                'name' => 'Nikola Plavsic',
-                'email' => 'nikolaplavsic@gmail.com',
-                'password' => 'examplePass',
-                'roles' => [
-                    [
-                        'id' => $roleResults[0]->id,
-                        'type' => 'role'
-                    ]
-                ]
-            ],
-            [
-                'name' => 'Velja Matic',
-                'email' => 'veljamatic@gmail.com',
-                'password' => 'examplePass',
+                'name' => 'John Doe',
+                'email' => 'john.doe@example.com',
+                'password' => 'secret',
                 'roles' => [
                     [
                         'id' => $roleResults[0]->id,

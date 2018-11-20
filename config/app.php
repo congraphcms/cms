@@ -159,7 +159,7 @@ return [
         Congraph\Filesystem\FilesystemServiceProvider::class,
         Congraph\Eav\EavServiceProvider::class,
         Congraph\Api\ApiServiceProvider::class,
-        Congraph\EntityElastic\EntityElasticServiceProvider::class,
+        // Congraph\EntityElastic\EntityElasticServiceProvider::class,
 
 
     ],

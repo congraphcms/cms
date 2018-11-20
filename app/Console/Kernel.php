@@ -14,8 +14,8 @@ class Kernel extends ConsoleKernel
      */
     protected $commands = [
         Commands\Inspire::class,
-        Commands\CongraphInit::class,
-        Commands\IndexEntities::class,
+        // Commands\CongraphInit::class,
+        // Commands\IndexEntities::class,
     ];
 
     /**

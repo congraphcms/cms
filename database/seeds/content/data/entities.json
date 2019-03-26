@@ -1,0 +1,315 @@
+[
+    {
+        "entity_type": "page",
+        "attribute_set": "page-default",
+        "status": "published",
+        "fields": {
+            "title": {
+                "en_US": "Home Page",
+                "sr_RS": "Početna Strana"
+            },
+            "url_slug": {
+                "en_US": "home",
+                "sr_RS": "pocetna"
+            },
+            "content": {
+                "en_US": "<p>This is a home page for WRPM starter Nuxt.js project.</p>",
+                "sr_RS": "<p>Ovo je početna stranica za WRPM starter Nuxt.js projekat.</p>"
+            },
+            "meta_title": {
+                "en_US": "WRPM Starter Project",
+                "sr_RS": "WRPM starter projekat"
+            },
+            "meta_description": {
+                "en_US": "WRPM Starter Project using Nuxt.js and Vue.js on frontend and Congraph as CMS.",
+                "sr_RS": "WRPM starter projekat koji koristi Nuxt.js i Vue.js na prezentacionom nivou i Congraph kao CMS."
+            },
+            "og_image": {
+                "url": "files/wrpm_logo.jpg",
+                "type": "file"
+            }
+        }
+    },
+    {
+        "entity_type": "page",
+        "attribute_set": "page-blog",
+        "status": "published",
+        "fields": {
+            "title": {
+                "en_US": "Blog",
+                "sr_RS": "Blog"
+            },
+            "url_slug": {
+                "en_US": "blog",
+                "sr_RS": "blog"
+            },
+            "content": {
+                "en_US": "<p>This is a sample blog page.</p>",
+                "sr_RS": "<p>Ovo je primer blog stranice.</p>"
+            },
+            "meta_title": {
+                "en_US": "WRPM Blog Sample",
+                "sr_RS": "WRPM primer bloga"
+            },
+            "meta_description": {
+                "en_US": "WRPM Blog Sample page for its starter project.",
+                "sr_RS": "WRPM primer bloga za starter projekat."
+            },
+            "og_image": {
+                "url": "files/sample_01.jpg",
+                "type": "file"
+            }
+        }
+    },
+    {
+        "entity_type": "page",
+        "attribute_set": "page-contact",
+        "status": "published",
+        "fields": {
+            "title": {
+                "en_US": "Contact",
+                "sr_RS": "Kontakt"
+            },
+            "url_slug": {
+                "en_US": "contact",
+                "sr_RS": "kontakt"
+            },
+            "address": {
+                "en_US": "Gruzanska 24, Belgrade",
+                "sr_RS": "Gružanska 24, Beograd"
+            },
+            "country": {
+                "en_US": "Serbia",
+                "sr_RS": "Srbija"
+            },
+            "phone": "+381 60 43 060 43",
+            "email": "office@wearepm.co",
+            "website": "https://wearepm.co",
+            "location": {
+                "address_components": [
+                    {
+                        "long_name": "24",
+                        "short_name": "24",
+                        "types": [
+                            "street_number"
+                        ]
+                    },
+                    {
+                        "long_name": "Gruzanska",
+                        "short_name": "Gruzanska",
+                        "types": [
+                            "route"
+                        ]
+                    },
+                    {
+                        "long_name": "Beograd",
+                        "short_name": "BG",
+                        "types": [
+                            "locality",
+                            "political"
+                        ]
+                    },
+                    {
+                        "long_name": "Grad Beograd",
+                        "short_name": "Grad Beograd",
+                        "types": [
+                            "administrative_area_level_2",
+                            "political"
+                        ]
+                    },
+                    {
+                        "long_name": "Serbia",
+                        "short_name": "RS",
+                        "types": [
+                            "country",
+                            "political"
+                        ]
+                    }
+                ],
+                "formatted_address": "Gruzanska 24, Beograd, Serbia",
+                "geometry": {
+                    "location": {
+                        "lat": 44.81566219725208,
+                        "lng": 20.475380628836092
+                    },
+                    "location_type": "ROOFTOP",
+                    "viewport": {
+                        "ma": {
+                            "j": 44.8142447197085,
+                            "l": 44.8169426802915,
+                            "isEmpty": [],
+                            "intersects": [],
+                            "contains": [],
+                            "extend": [],
+                            "equals": [],
+                            "center": []
+                        },
+                        "fa": {
+                            "j": 20.474020919708437,
+                            "l": 20.476718880291514
+                        }
+                    }
+                },
+                "place_id": "ChIJ__VG7rt6WkcR3aJi3F48KwY",
+                "plus_code": {
+                    "compound_code": "RF8G+64 Belgrade, Serbia",
+                    "global_code": "8GP2RF8G+64"
+                },
+                "types": [
+                    "establishment",
+                    "point_of_interest"
+                ]
+            },
+            "meta_title": {
+                "en_US": "WRPM Contact Page Sample",
+                "sr_RS": "WRPM primer kontakt stranice"
+            },
+            "meta_description": {
+                "en_US": "WRPM Contact Page Sample for its starter project.",
+                "sr_RS": "WRPM primer kotakt stranice za starter projekat."
+            },
+            "og_image": {
+                "url": "files/wrpm_logo.jpg",
+                "type": "file"
+            }
+        }
+    },
+    {
+        "entity_type": "menu-item",
+        "attribute_set": "relation-menu-item",
+        "status": "public",
+        "fields": {
+            "label": {
+                "en_US": "Home",
+                "sr_RS": "Početna"
+            },
+            "linked_page": {
+                "id": 1,
+                "type": "entity"
+            }
+        }
+    },
+    {
+        "entity_type": "menu-item",
+        "attribute_set": "relation-menu-item",
+        "status": "public",
+        "fields": {
+            "label": {
+                "en_US": "Blog",
+                "sr_RS": "Blog"
+            },
+            "linked_page": {
+                "id": 2,
+                "type": "entity"
+            }
+        }
+    },
+    {
+        "entity_type": "menu-item",
+        "attribute_set": "relation-menu-item",
+        "status": "public",
+        "fields": {
+            "label": {
+                "en_US": "Contact",
+                "sr_RS": "Kontakt"
+            },
+            "linked_page": {
+                "id": 3,
+                "type": "entity"
+            }
+        }
+    },
+    {
+        "entity_type": "menu",
+        "attribute_set": "default-menu",
+        "status": "public",
+        "fields": {
+            "name": {
+                "en_US": "Main Menu",
+                "sr_RS": "Main Meni"
+            },
+            "label": {
+                "en_US": "Menu",
+                "sr_RS": "Meni"
+            },
+            "slug": "main-menu",
+            "menu_items": [
+                {
+                    "id": 4,
+                    "type": "entity"
+                },
+                {
+                    "id": 5,
+                    "type": "entity"
+                },
+                {
+                    "id": 6,
+                    "type": "entity"
+                }
+            ]
+        }
+    },
+    {
+        "entity_type": "article",
+        "attribute_set": "article-default",
+        "status": "published",
+        "fields": {
+            "title": {
+                "en_US": "We are awesome!",
+                "sr_RS": "Mi smo super!"
+            },
+            "url_slug": {
+                "en_US": "we-are-awesome",
+                "sr_RS": "mi-smo-super"
+            },
+            "content": {
+                "en_US": "<p>Just a blog article about our awesomness.</p>",
+                "sr_RS": "<p>Jedan članak o tome kako smo mi super.</p>"
+            },
+            "cover_image": {
+                "url": "files/wrpm_logo.jpg",
+                "type": "file"
+            },
+            "meta_title": {
+                "en_US": "WRPM is awesome!",
+                "sr_RS": "WRPM je super!"
+            },
+            "meta_description": {
+                "en_US": "WRPM is so awesome that it needs a blog article.",
+                "sr_RS": "WRPM je toliko super da je morao da se napiše članak o tome."
+            }
+        }
+    },
+    {
+        "entity_type": "article",
+        "attribute_set": "article-default",
+        "status": "published",
+        "fields": {
+            "title": {
+                "en_US": "You are awesome!",
+                "sr_RS": "Ti si super!"
+            },
+            "url_slug": {
+                "en_US": "you-are-awesome",
+                "sr_RS": "ti-si-super"
+            },
+            "content": {
+                "en_US": "<p>Just a blog article about your awesomness.</p>",
+                "sr_RS": "<p>Jedan članak o tome kako si ti super.</p>"
+            },
+            "cover_image": {
+                "url": "files/sample_02.jpg",
+                "type": "file"
+            },
+            "meta_title": {
+                "en_US": "You are awesome!",
+                "sr_RS": "Ti si super!"
+            },
+            "meta_description": {
+                "en_US": "You are so awesome that you needs a blog article.",
+                "sr_RS": "Ti si toliko super da je morao da se napiše članak o tome."
+            }
+        }
+    }
+    
+]

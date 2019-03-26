@@ -1,0 +1,50 @@
+[
+    {
+        "code": "page",
+        "endpoint": "pages",
+        "name": "Page",
+        "plural_name": "Pages",
+        "localized": 1,
+        "localized_workflow": 1,
+        "workflow_id": 2,
+        "default_point_id": 3,
+        "multiple_sets": 1,
+        "default_set_id": 0
+    },
+    {
+        "code": "article",
+        "endpoint": "articles",
+        "name": "Article",
+        "plural_name": "Articles",
+        "localized": 1,
+        "localized_workflow": 1,
+        "workflow_id": 2,
+        "default_point_id": 3,
+        "multiple_sets": 1,
+        "default_set_id": 0
+    },
+    {
+        "code": "menu-item",
+        "endpoint": "menu-items",
+        "name": "Menu Item",
+        "plural_name": "Menu Items",
+        "localized": 1,
+        "localized_workflow": 1,
+        "workflow_id": 1,
+        "default_point_id": 1,
+        "multiple_sets": 1,
+        "default_set_id": 0
+    },
+    {
+        "code": "menu",
+        "endpoint": "menus",
+        "name": "Menu",
+        "plural_name": "Menus",
+        "localized": 1,
+        "localized_workflow": 1,
+        "workflow_id": 1,
+        "default_point_id": 1,
+        "multiple_sets": 1,
+        "default_set_id": 0
+    }
+]

@@ -1,0 +1,155 @@
+[
+    {
+        "code": "page-default",
+        "entity_type": "page",
+        "name": "Default Page",
+        "primary_attribute": "title",
+        "attributes": [
+            {
+                "code": "title"
+            },
+            {
+                "code": "url_slug"
+            },
+            {
+                "code": "content"
+            },
+            {
+                "code": "meta_title"
+            },
+            {
+                "code": "meta_description"
+            },
+            {
+                "code": "og_image"
+            }
+        ]
+    },
+    {
+        "code": "page-contact",
+        "entity_type": "page",
+        "name": "Contact Page",
+        "primary_attribute": "title",
+        "attributes": [
+            {
+                "code": "title"
+            },
+            {
+                "code": "url_slug"
+            },
+            {
+                "code": "address"
+            },
+            {
+                "code": "country"
+            },
+            {
+                "code": "phone"
+            },
+            {
+                "code": "email"
+            },
+            {
+                "code": "website"
+            },
+            {
+                "code": "location"
+            },
+            {
+                "code": "meta_title"
+            },
+            {
+                "code": "meta_description"
+            },
+            {
+                "code": "og_image"
+            }
+        ]
+    },
+    {
+        "code": "page-blog",
+        "entity_type": "page",
+        "name": "Blog Page",
+        "primary_attribute": "title",
+        "attributes": [
+            {
+                "code": "title"
+            },
+            {
+                "code": "url_slug"
+            },
+            {
+                "code": "content"
+            },
+            {
+                "code": "meta_title"
+            },
+            {
+                "code": "meta_description"
+            },
+            {
+                "code": "og_image"
+            }
+        ]
+    },
+    {
+        "code": "article-default",
+        "entity_type": "article",
+        "name": "Default Article",
+        "primary_attribute": "title",
+        "attributes": [
+            {
+                "code": "title"
+            },
+            {
+                "code": "url_slug"
+            },
+            {
+                "code": "content"
+            },
+            {
+                "code": "cover_image"
+            },
+            {
+                "code": "meta_title"
+            },
+            {
+                "code": "meta_description"
+            }
+        ]
+    },
+    {
+        "code": "relation-menu-item",
+        "entity_type": "menu-item",
+        "name": "Relation Menu Item",
+        "primary_attribute": "label",
+        "attributes": [
+            {
+                "code": "label"
+            },
+            {
+                "code": "linked_page"
+            }
+        ]
+    },
+    {
+        "code": "default-menu",
+        "entity_type": "menu",
+        "name": "Default Menu",
+        "primary_attribute": "name",
+        "attributes": [
+            {
+                "code": "name"
+            },
+            {
+                "code": "label"
+            },
+            {
+                "code": "slug"
+            },
+            {
+                "code": "menu_items"
+            }
+        ]
+    }
+]

@@ -162,7 +162,7 @@ class CreateEntityTables extends Migration {
 
 		// 1.2 Drop table enities
 
-		Schema::drop('entities');
+		Schema::drop('entity_statuses');
 	}
 
 }

@@ -10,6 +10,7 @@
 
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
+use Illuminate\Support\Facades\Storage;
 
 /**
  * CreateFileTables migration
@@ -81,8 +82,8 @@ class CreateFileTables extends Migration {
 	{
 
 		// 1.0 Drop table files
-
 		Schema::drop('files');
+		Storage::deleteDirectory('files');
 	}
 
 }

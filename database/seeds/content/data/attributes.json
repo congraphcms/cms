@@ -1,0 +1,317 @@
+[
+    {
+        "code": "title",
+        "admin_label": "Title",
+        "admin_notice": "",
+        "field_type": "text",
+        "table": "attribute_values_text",
+        "localized": 1,
+        "default_value": null,
+        "unique": 0,
+        "required": 1,
+        "filterable": 1,
+        "searchable": 1,
+        "search_boost": 1,
+        "status": "user_defined",
+        "data": {
+            "input_type": "text_input"
+        }
+    },
+    {
+        "code": "url_slug",
+        "admin_label": "URL Slug",
+        "admin_notice": "",
+        "field_type": "text",
+        "table": "attribute_values_text",
+        "localized": 1,
+        "default_value": null,
+        "unique": 0,
+        "required": 1,
+        "filterable": 1,
+        "searchable": 0,
+        "search_boost": 1,
+        "status": "user_defined",
+        "data": {
+            "input_type": "text_input"
+        }
+    },
+    {
+        "code": "content",
+        "admin_label": "Content",
+        "admin_notice": "",
+        "field_type": "text",
+        "table": "attribute_values_text",
+        "localized": 1,
+        "default_value": null,
+        "unique": 0,
+        "required": 0,
+        "filterable": 1,
+        "searchable": 1,
+        "search_boost": 1,
+        "status": "user_defined",
+        "data": {
+            "input_type": "html_editor"
+        }
+    }, 
+    {
+        "code": "cover_image",
+        "admin_label": "Cover Image",
+        "admin_notice": "",
+        "field_type": "asset",
+        "table": "attribute_values_integer",
+        "localized": 0,
+        "default_value": null,
+        "unique": 0,
+        "required": 0,
+        "filterable": 0,
+        "searchable": 0,
+        "search_boost": 0,
+        "status": "user_defined"
+    },
+    {
+        "code": "meta_title",
+        "admin_label": "Meta Title",
+        "admin_notice": "",
+        "field_type": "text",
+        "table": "attribute_values_text",
+        "localized": 1,
+        "default_value": null,
+        "unique": 0,
+        "required": 0,
+        "filterable": 0,
+        "searchable": 1,
+        "search_boost": 1,
+        "status": "user_defined",
+        "data": {
+            "input_type": "text_input"
+        }
+    },
+    {
+        "code": "meta_description",
+        "admin_label": "Meta Description",
+        "admin_notice": "",
+        "field_type": "text",
+        "table": "attribute_values_text",
+        "localized": 1,
+        "default_value": null,
+        "unique": 0,
+        "required": 0,
+        "filterable": 0,
+        "searchable": 1,
+        "search_boost": 1,
+        "status": "user_defined",
+        "data": {
+            "input_type": "text_area"
+        }
+    },
+    {
+        "code": "og_image",
+        "admin_label": "FB Image",
+        "admin_notice": "",
+        "field_type": "asset",
+        "table": "attribute_values_integer",
+        "localized": 0,
+        "default_value": null,
+        "unique": 0,
+        "required": 0,
+        "filterable": 0,
+        "searchable": 0,
+        "search_boost": 0,
+        "status": "user_defined"
+    },
+    {
+        "code": "label",
+        "admin_label": "Label",
+        "admin_notice": "",
+        "field_type": "text",
+        "table": "attribute_values_text",
+        "localized": 1,
+        "default_value": null,
+        "unique": 0,
+        "required": 1,
+        "filterable": 1,
+        "searchable": 1,
+        "search_boost": 1,
+        "status": "user_defined",
+        "data": {
+            "input_type": "text_input"
+        }
+    },
+    {
+        "code": "linked_page",
+        "admin_label": "Page",
+        "admin_notice": "Page that this menu item represents",
+        "field_type": "relation",
+        "table": "attribute_values_integer",
+        "localized": 0,
+        "default_value": null,
+        "unique": 0,
+        "required": 1,
+        "filterable": 1,
+        "searchable": 0,
+        "search_boost": 0,
+        "status": "user_defined",
+        "data": {
+            "allowed_types": ["page"]
+        }
+    },
+    {
+        "code": "name",
+        "admin_label": "Name",
+        "admin_notice": "",
+        "field_type": "text",
+        "table": "attribute_values_text",
+        "localized": 1,
+        "default_value": null,
+        "unique": 0,
+        "required": 1,
+        "filterable": 1,
+        "searchable": 1,
+        "search_boost": 1,
+        "status": "user_defined",
+        "data": {
+            "input_type": "text_input"
+        }
+    },
+    {
+        "code": "slug",
+        "admin_label": "Slug",
+        "admin_notice": "",
+        "field_type": "text",
+        "table": "attribute_values_text",
+        "localized": 0,
+        "default_value": null,
+        "unique": 0,
+        "required": 1,
+        "filterable": 1,
+        "searchable": 0,
+        "search_boost": 0,
+        "status": "user_defined",
+        "data": {
+            "input_type": "text_input"
+        }
+    },
+    {
+        "code": "menu_items",
+        "admin_label": "Menu Items",
+        "admin_notice": "",
+        "field_type": "relation_collection",
+        "table": "attribute_values_integer",
+        "localized": 0,
+        "default_value": null,
+        "unique": 0,
+        "required": 0,
+        "filterable": 1,
+        "searchable": 0,
+        "search_boost": 0,
+        "status": "user_defined",
+        "data": {
+            "allowed_types": ["menu-item"]
+        }
+    },
+    {
+        "code": "address",
+        "admin_label": "Address",
+        "admin_notice": "",
+        "field_type": "text",
+        "table": "attribute_values_text",
+        "localized": 1,
+        "default_value": null,
+        "unique": 0,
+        "required": 1,
+        "filterable": 1,
+        "searchable": 1,
+        "search_boost": 1,
+        "status": "user_defined",
+        "data": {
+            "input_type": "text_input"
+        }
+    },
+    {
+        "code": "country",
+        "admin_label": "Country",
+        "admin_notice": "",
+        "field_type": "text",
+        "table": "attribute_values_text",
+        "localized": 1,
+        "default_value": null,
+        "unique": 0,
+        "required": 1,
+        "filterable": 1,
+        "searchable": 1,
+        "search_boost": 1,
+        "status": "user_defined",
+        "data": {
+            "input_type": "text_input"
+        }
+    },
+    {
+        "code": "phone",
+        "admin_label": "Phone Number",
+        "admin_notice": "",
+        "field_type": "text",
+        "table": "attribute_values_text",
+        "localized": 0,
+        "default_value": null,
+        "unique": 0,
+        "required": 1,
+        "filterable": 1,
+        "searchable": 1,
+        "search_boost": 1,
+        "status": "user_defined",
+        "data": {
+            "input_type": "text_input"
+        }
+    },
+    {
+        "code": "email",
+        "admin_label": "Email",
+        "admin_notice": "",
+        "field_type": "text",
+        "table": "attribute_values_text",
+        "localized": 0,
+        "default_value": null,
+        "unique": 0,
+        "required": 1,
+        "filterable": 1,
+        "searchable": 1,
+        "search_boost": 1,
+        "status": "user_defined",
+        "data": {
+            "input_type": "text_input"
+        }
+    },
+    {
+        "code": "website",
+        "admin_label": "Website URL",
+        "admin_notice": "",
+        "field_type": "text",
+        "table": "attribute_values_text",
+        "localized": 0,
+        "default_value": null,
+        "unique": 0,
+        "required": 1,
+        "filterable": 1,
+        "searchable": 1,
+        "search_boost": 1,
+        "status": "user_defined",
+        "data": {
+            "input_type": "text_input"
+        }
+    },
+    {
+        "code": "location",
+        "admin_label": "Location",
+        "admin_notice": "",
+        "field_type": "location",
+        "table": "attribute_values_text",
+        "localized": 0,
+        "default_value": null,
+        "unique": 0,
+        "required": 1,
+        "filterable": 0,
+        "searchable": 0,
+        "search_boost": 0,
+        "status": "user_defined"
+    }
+]

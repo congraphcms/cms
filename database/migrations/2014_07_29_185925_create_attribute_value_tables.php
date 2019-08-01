@@ -181,7 +181,7 @@ class CreateAttributeValueTables extends Migration {
 		// ---------------------------------------------------
 
 		Schema::create('attribute_values_fulltext', function($table) {
-
+			$table->engine = 'MyISAM';
 			// primary key, autoincrement
 			$table->increments('id');
 
